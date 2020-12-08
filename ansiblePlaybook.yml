@@ -10,7 +10,7 @@
       dest: .
   - name: copy war file into Remote machine
     copy:
-      src: webapp.war
+      src: ./webapp/target/webapp.jar
       dest: .
       
   - name: Stop the running container
